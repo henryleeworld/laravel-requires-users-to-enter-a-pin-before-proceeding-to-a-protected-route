@@ -44,18 +44,17 @@ return [
      */
     'number' => 4,
     /**
-     * int - Number of times a user is allowed to authenticate
-     * using his pin
+     * int - Pin authentication rate limit
      */
     'max_attempts' => 3,
     /**
-     * int - Number of times a user is allowed to authenticate
-     * using his pin
+     * int - Number of minutes a user is supposed to wait before
+     * another attempt
      */
     'delay_minutes' => 1,
     /**
-     * int - Number of times a user is allowed to call
-     * arrested route
+     * int - Number of times a user is allowed to try and authenticate
+     * before the route is cancelled
      */
     'max_trial' => 3,
     /**
@@ -72,5 +71,22 @@ return [
          * boolean - Send a notification whenever pin is changed
          */
         'change' => true,
-    ]
+    ],
+
+    /**
+     * string - Route that will be displayed in the notification
+     * that is sent when a user's pin has been changed
+     */
+    'auth_route_guard' => 'auth',
+
+    /**
+     * string - Route that will be displayed in the notification
+     * that is sent when a user's pin has been changed
+     */
+    'auth_guard' => 'web',
+    
+    /**
+     * sanctum/api - Route middleware of authenticated user
+     */
+    'auth_middleware' => 'sanctum',
 ];

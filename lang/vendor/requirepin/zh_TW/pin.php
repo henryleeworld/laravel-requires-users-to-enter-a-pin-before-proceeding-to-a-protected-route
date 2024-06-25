@@ -18,6 +18,7 @@ return [
         'message' => '如果此操作不是您執行的，請點擊下面的連結更改您的密碼。',
         'action' => '點擊這裡',
         'complimentary_close' => '小心！'
-    ]
+    ],
+    'not_allowed' => '不允許！',
 
 ];

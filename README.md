@@ -1,4 +1,4 @@
-# Laravel 10 要求使用者對受保護路由請求進行 PIN 碼確認和認證
+# Laravel 11 要求使用者對受保護路由請求進行 PIN 碼確認和認證
 
 引入 ikechukwukalu 的 requirepin 套件來擴增要求使用者對受保護路由請求進行 PIN 碼確認和認證，使用 PIN 碼可確保只有獲得授權的使用者可以進入，快速又安全。
 
@@ -33,8 +33,8 @@ $ npm run build
 - 完成註冊後，可以經由 `/login` 來進行登入。
 
 ## 畫面截圖
-![](https://i.imgur.com/rRsy2yG.png)
-> 要求輸入 PIN 碼方可進入
+![](https://i.imgur.com/8M15jVE.png)
+> 必須知道並輸入舊的 PIN 碼（第一次請使用預設密碼），才能變更為新的 PIN 碼
 
-![](https://i.imgur.com/X3rbhOi.png)
-> 必須知道並輸入舊的 PIN 碼，才能變更為新的 PIN 碼
+![](https://i.imgur.com/ZwI13on.png)
+> 要求輸入 PIN 碼方可進入
